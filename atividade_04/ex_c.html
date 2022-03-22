@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Três</title>
+    <script>
+
+        /*Drofo e Topper estão em uma aventura mágica. Faça um programa que contenha um inventário para cada um dos dois aventureiros - esse inventário será um array.
+Drofo terá um anel da invisibilidade, dois pares de botas mágicas, uma poção do sono e duas poções da inocência em seu inventário e nessa ordem. 
+Torper terá uma capa da invisibilidade, uma pedra do despertar,  uma varinha das varinhas, uma poção da inocência e duas poções da mentira, poção anti-inteligência e nessa ordem. 
+
+No meio de sua jornada, Torper consumiu uma das poções da mentira, perdeu sua pedra e ganhou um par de botar mágicas do Drofo, achou um escudo mágico e uma espada mágica. 
+Descreva cada uma das ações acima. utilizando código (utilize comentários para ficar mais claro). 
+
+No meio da sua jornada, Drofo, ganhou mais uma bota mágica, usou sua poção do sono e consumiu a poção anti-inteligência do Torper, encontrou um ovo de dragão e uma coxinha.
+Descreva cada uma das ações acima. utilizando código.
+
+Exiba o resultado final de cada um dos inventários utilizando "document.write"*/
+
+        var drofo =[" anel da invisibilidade ", " botas mágicas ", " botas mágicas ", " poção do sono ", " poções da inocência ", " poções da inocência "];
+
+        var topper =[" capa da invisibilidade ", " pedra do despertar ", " varinha das varinhas ", " poção da inocência ", " poções da mentira ", " poções da mentira ", " poção anti-inteligência "];
+
+        document.write("Array de Drofo :" + drofo + "<br>" + "Array de Topper :" + topper + "<br>");
+
+        //Array de Topper
+
+        topper.splice(4,1); // remover uma poção da mentira.
+        
+
+        document.write("Array de Topper :" + topper + "<br>");
+
+        topper.push("par de botar mágicas", "escudo mágico", "espada mágica");
+
+        document.write("Array de Topper :" + topper + "<br>");
+
+
+        //Array de Drofo
+
+        drofo.push("uma bota mágica"); // Drofo ganhou mais uma bota mágica
+
+        document.write("Array de Drofo :" + drofo + "<br>");
+
+        drofo.splice(3,1); // remover poção do sono
+
+        document.write("Array de Drofo :" + drofo + "<br>");
+
+        topper.splice(5,1); // remover poção do topper
+
+        document.write("Array de Topper :" + topper + "<br>");
+
+        drofo.push("ovo de dragão", "coxinha");
+
+        document.write("Array de Drofo :" + drofo + "<br>");
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
